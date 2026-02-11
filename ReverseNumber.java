@@ -10,9 +10,9 @@ public class ReverseNumber {
         int reverse = 0;
 
         while(number != 0) {
-            int digit = number % 10;      // Get last digit
-            reverse = reverse * 10 + digit; // Add digit to reverse
-            number = number / 10;        // Remove last digit
+            int digit = number % 10;      
+            reverse = reverse * 10 + digit; 
+            number = number / 10;        
         }
 
         System.out.println("Reversed number: " + reverse);
