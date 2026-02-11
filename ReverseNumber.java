@@ -6,7 +6,7 @@ public class ReverseNumber {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = sc.nextInt();
-        
+    
         int reverse = 0;
 
         while(number != 0) {
