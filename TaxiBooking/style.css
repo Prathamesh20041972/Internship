@@ -1,0 +1,50 @@
+body{
+font-family:Arial;
+background:linear-gradient(to right,#74ebd5,#9face6);
+text-align:center;
+padding: 40px;
+}
+
+.container{
+background:rgb(227, 231, 230);
+width:320px;
+margin:auto;
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 20px rgba(1,1,1,2.5);
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin:8px 0;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#0ed8e6;
+color:white;
+border:none;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.show{
+width:260px;
+margin-top:20px;
+background:#010e12;
+}
+
+table{
+margin:auto;
+margin-top:10px;
+border-collapse:collapse;
+background:white;
+}
+
+td,th{
+border:1px solid rgb(19, 18, 18);
+padding:8px;
+}
