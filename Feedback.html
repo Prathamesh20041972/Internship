@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ethnotech Internship Feedback Form</title>
+</head>
+<body>
+
+    <h1>Ethnotech Internship Feedback Form</h1>
+    <p>Please provide your valuable feedback about your internship experience.</p>
+
+    <form action="#" method="post">
+
+        <!-- Intern Details -->
+        <fieldset>
+            <legend><strong>Intern Details</strong></legend>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="college">College/University:</label><br>
+            <input type="text" id="college" name="college" required><br><br>
+
+            <label for="course">Course/Branch:</label><br>
+            <input type="text" id="course" name="course"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Internship Details -->
+        <fieldset>
+            <legend><strong>Internship Details</strong></legend>
+
+            <label for="domain">Internship Domain:</label><br>
+            <select id="domain" name="domain">
+                <option value="">--Select Domain--</option>
+                <option>Web Development</option>
+                <option>Java Development</option>
+                <option>Data Science</option>
+                <option>Machine Learning</option>
+                <option>Other</option>
+            </select><br><br>
+
+            <label for="duration">Internship Duration:</label><br>
+            <input type="text" id="duration" name="duration" placeholder="e.g. 4 Weeks"><br><br>
+
+            <label for="mentor">Mentor Name:</label><br>
+            <input type="text" id="mentor" name="mentor"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Feedback Section -->
+        <fieldset>
+            <legend><strong>Feedback</strong></legend>
+
+            <label>Quality of Training:</label><br>
+            <input type="radio" name="training" value="Excellent" required> Excellent<br>
+            <input type="radio" name="training" value="Good"> Good<br>
+            <input type="radio" name="training" value="Average"> Average<br>
+            <input type="radio" name="training" value="Poor"> Poor<br><br>
+
+            <label>Mentor Support:</label><br>
+            <input type="radio" name="mentor_support" value="Excellent" required> Excellent<br>
+            <input type="radio" name="mentor_support" value="Good"> Good<br>
+            <input type="radio" name="mentor_support" value="Average"> Average<br>
+            <input type="radio" name="mentor_support" value="Poor"> Poor<br><br>
+
+            <label>Learning Experience:</label><br>
+            <input type="radio" name="learning" value="Excellent" required> Excellent<br>
+            <input type="radio" name="learning" value="Good"> Good<br>
+            <input type="radio" name="learning" value="Average"> Average<br>
+            <input type="radio" name="learning" value="Poor"> Poor<br><br>
+
+            <label>What skills did you gain?</label><br>
+            <textarea name="skills" rows="4" cols="50" placeholder="Mention skills you learned..."></textarea><br><br>
+
+            <label>What did you like the most?</label><br>
+            <textarea name="like" rows="4" cols="50"></textarea><br><br>
+
+            <label>Suggestions for improvement:</label><br>
+            <textarea name="suggestions" rows="4" cols="50"></textarea><br><br>
+
+            <label>Would you recommend this internship?</label><br>
+            <select name="recommend">
+                <option value="">--Select--</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Maybe</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <!-- Declaration -->
+        <fieldset>
+            <legend><strong>Declaration</strong></legend>
+
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I confirm that the above feedback is true to my experience.</label>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
