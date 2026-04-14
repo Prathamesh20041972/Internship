@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Pricing UI</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Container */
+.container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  width: 260px;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+
+  /* Glass effect */
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  transition: all 0.4s ease;
+}
+
+/* Hover Animation */
+.card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+/* Title */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+  font-size: 30px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+/* Features */
+ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+ul li {
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+/* Button */
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #00c9ff;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #92fe9d;
+}
+
+/* Highlight Plan */
+.highlight {
+  transform: scale(1.08);
+  border: 2px solid transparent;
+  background: linear-gradient(#1e1e2f, #1e1e2f) padding-box,
+              linear-gradient(45deg, #ff9f43, #ff6b6b) border-box;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff6b6b;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Basic -->
+  <div class="card">
+    <h2>Basic</h2>
+    <p class="price">₹199/mo</p>
+    <ul>
+      <li>✔ 5 Projects</li>
+      <li>✔ Email Support</li>
+      <li>✖ Analytics</li>
+    </ul>
+    <button class="btn">Choose Plan</button>
+  </div>
+
+  <!-- Standard -->
+  <div class="card highlight">
+    <span class="badge">BEST</span>
+    <h2>Standard</h2>
+    <p class="price">₹499/mo</p>
+    <ul>
+      <li>✔ 15 Projects</li>
+      <li>✔ Priority Support</li>
+      <li>✔ Analytics</li>
+    </ul>
+    <button class="btn">Best Choice</button>
+  </div>
+
+  <!-- Premium -->
+  <div class="card">
+    <h2>Premium</h2>
+    <p class="price">₹999/mo</p>
+    <ul>
+      <li>✔ Unlimited Projects</li>
+      <li>✔ 24/7 Support</li>
+      <li>✔ Advanced Analytics</li>
+    </ul>
+    <button class="btn">Choose Plan</button>
+  </div>
+
+</div>
+
+</body>
+</html>
